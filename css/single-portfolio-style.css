@@ -1,12 +1,22 @@
+:root {
+    --primary-color: #4caf50;
+    --secondary-color: #333;
+    --background-color: #f8f8f8;
+    --hover-color: #a0dfa0;
+    --text-color: #333;
+    --link-color: #4caf50;
+    --link-hover-color: #45a049;
+    --blockquote-border-color: #4caf50;
+}
+
 /* styles for header */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Centers items vertically */
     padding: 20px;
-    background-color: #f8f8f8; /* Background color for navbar */
+    background-color: var(--background-color); /* Background color for navbar */
 }
-
 
 /* Logo */
 .logo {
@@ -37,28 +47,29 @@ nav ul {
 }
 
 .hire-button .cta-button {
-    background-color: #4caf50; /* Button color */
+    background-color: var(--primary-color); /* Button color */
     color: white; /* Text color */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s; /* Transition for background color */
-    border: 2px solid #333; /* Add a border around the hire button */
+    border: 2px solid var(--secondary-color); /* Add a border around the hire button */
 }
 
 .hire-button .cta-button:hover {
-    background-color: #45a049; /* Darken button on hover */
+    background-color: var(--hover-color); /* Darken button on hover */
 }
 
 nav a {
     text-decoration: none;
-    color: #333; /* Default link color */
+    color: var(--text-color); /* Default link color */
     transition: color 0.3s; /* Transition for color change */
 }
 
 nav a:hover {
-    color: #4caf50; /* Change color on hover */
+    color: var(--primary-color); /* Change color on hover */
 }
+
 /* Circular image styling */
 .image-container {
     display: flex; 
@@ -72,19 +83,18 @@ nav a:hover {
     height: 400px; 
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; 
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
 }
-
-
-
 
 body {
-    background: linear-gradient(to top, #beb9b8, #ffffff); /* background gradient */
+    background: linear-gradient(to top, #7e7c7c, #ffffff); /* background gradient */
 }
+
 /* Base text styles */
 body {
     font-family: Arial, sans-serif; 
     line-height: 1.6; 
-    color: #333; 
+    color: var(--text-color); 
     background-color: #f9f9f9; 
     padding: 20px; 
 }
@@ -92,13 +102,13 @@ body {
 /* Headings */
 h1 {
     font-size: 32px; /* Font size for main heading */
-    color: #4caf50; 
+    color: var(--primary-color); 
     margin-bottom: 10px; 
 }
 
 h4 {
     font-size: 32px; /* Size for subheadings */
-    color: #333; 
+    color: var(--text-color); 
     margin: 10px 0; 
 }
 
@@ -108,7 +118,7 @@ blockquote {
     font-style: italic; /* Italics for quotes */
     margin: 20px 0; /* Space above and below */
     padding-left: 15px; 
-    border-left: 4px solid #4caf50; /* Green line on the left */
+    border-left: 4px solid var(--blockquote-border-color); /* Green line on the left */
 }
 
 /* Paragraphs */
@@ -119,24 +129,24 @@ p {
 
 /* Links */
 a {
-    color: #4caf50; /* Green link color */
+    color: var(--link-color); /* Green link color */
     text-decoration: none; /* Remove underline */
 }
 
 a:hover {
     text-decoration: underline; /* Underline on hover */
-    color: #45a049; /* Darken color on hover */
+    color: var(--link-hover-color); /* Darken color on hover */
 }
 
 /* Classes for titles and subtitles */
 .title {
     font-size: 28px; 
-    color: #333; 
+    color: var(--text-color); 
     margin: 20px 0; 
 }
 
 .subtitle {
-    font-size: 20pxrem; /* Size for subtitles */
+    font-size: 20px; /* Size for subtitles */
     color: #666; 
     margin-bottom: 20px; 
 }
