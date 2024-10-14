@@ -1,4 +1,4 @@
-:root {
+:root{
     --primary-color: #4caf50;
     --secondary-color: #333;
     --background-color: #f8f8f8;
@@ -12,7 +12,7 @@
 /* styles for header */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Aligns items to the left and right */
     align-items: center; /* Centers items vertically */
     padding: 20px;
     background-color: var(--background-color); /* Background color for navbar */
@@ -37,6 +37,8 @@ nav ul {
     display: flex;
     justify-content: center; 
     gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 /* Hire button */
@@ -88,14 +90,9 @@ nav a:hover {
 
 body {
     background: linear-gradient(to top, #7e7c7c, #ffffff); /* background gradient */
-}
-
-/* Base text styles */
-body {
     font-family: Arial, sans-serif; 
     line-height: 1.6; 
     color: var(--text-color); 
-    background-color: #f9f9f9; 
     padding: 20px; 
 }
 
